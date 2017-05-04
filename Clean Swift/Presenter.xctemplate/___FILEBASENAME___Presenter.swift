@@ -12,12 +12,8 @@ protocol ___FILEBASENAMEASIDENTIFIER___PresenterInterface {
     func presentSomething(response: ___FILEBASENAMEASIDENTIFIER___.Something.Response)
 }
 
-protocol ___FILEBASENAMEASIDENTIFIER___PresenterOutput: class {
-    func displaySomething(viewModel: ___FILEBASENAMEASIDENTIFIER___.Something.ViewModel)
-}
-
 class ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER___PresenterInterface {
-    weak var output: ___FILEBASENAMEASIDENTIFIER___PresenterOutput!
+    weak var viewController: ___FILEBASENAMEASIDENTIFIER___ViewControllerInterface!
 
     // MARK: - Presentation logic
 
@@ -25,6 +21,6 @@ class ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER___Pre
         // NOTE: Format the response from the Interactor and pass the result back to the View Controller
 
         let viewModel = ___FILEBASENAMEASIDENTIFIER___.Something.ViewModel()
-        output.displaySomething(viewModel: viewModel)
+        viewController.displaySomething(viewModel: viewModel)
     }
 }
