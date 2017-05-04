@@ -18,28 +18,26 @@ extension ___FILEBASENAMEASIDENTIFIER___ViewController: ___FILEBASENAMEASIDENTIF
 
 extension ___FILEBASENAMEASIDENTIFIER___Interactor: ___FILEBASENAMEASIDENTIFIER___ViewControllerOutput {}
 
-extension ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER___InteractorOutput {}
-
 class ___FILEBASENAMEASIDENTIFIER___Configurator {
 
     // MARK: - Object lifecycle
-  
+
     static let sharedInstance = ___FILEBASENAMEASIDENTIFIER___Configurator()
-  
+
     private init() {}
-  
+
     // MARK: - Configuration
-  
+
     func configure(viewController: ___FILEBASENAMEASIDENTIFIER___ViewController) {
         let router = ___FILEBASENAMEASIDENTIFIER___Router()
         router.viewController = viewController
-    
+
         let presenter = ___FILEBASENAMEASIDENTIFIER___Presenter()
         presenter.output = viewController
-    
+
         let interactor = ___FILEBASENAMEASIDENTIFIER___Interactor()
-        interactor.output = presenter
-    
+        interactor.presenter = presenter
+
         viewController.output = interactor
         viewController.router = router
     }
