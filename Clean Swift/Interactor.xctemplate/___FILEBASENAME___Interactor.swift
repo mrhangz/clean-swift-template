@@ -8,11 +8,11 @@
 
 import UIKit
 
-protocol ___FILEBASENAMEASIDENTIFIER___InteractorInput {
+protocol ___FILEBASENAMEASIDENTIFIER___InteractorInterface {
     func doSomething(request: ___FILEBASENAMEASIDENTIFIER___.Something.Request)
 }
 
-class ___FILEBASENAMEASIDENTIFIER___Interactor: ___FILEBASENAMEASIDENTIFIER___InteractorInput {
+class ___FILEBASENAMEASIDENTIFIER___Interactor: ___FILEBASENAMEASIDENTIFIER___InteractorInterface {
     var presenter: ___FILEBASENAMEASIDENTIFIER___PresenterInterface!
     var worker: ___FILEBASENAMEASIDENTIFIER___Worker!
 

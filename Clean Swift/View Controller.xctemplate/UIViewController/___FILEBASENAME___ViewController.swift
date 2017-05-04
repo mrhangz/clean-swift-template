@@ -12,12 +12,8 @@ protocol ___FILEBASENAMEASIDENTIFIER___ViewControllerInterface: class {
     func displaySomething(viewModel: ___FILEBASENAMEASIDENTIFIER___.Something.ViewModel)
 }
 
-protocol ___FILEBASENAMEASIDENTIFIER___ViewControllerOutput {
-    func doSomething(request: ___FILEBASENAMEASIDENTIFIER___.Something.Request)
-}
-
 class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController, ___FILEBASENAMEASIDENTIFIER___ViewControllerInterface {
-    var output: ___FILEBASENAMEASIDENTIFIER___ViewControllerOutput!
+    var interactor: ___FILEBASENAMEASIDENTIFIER___InteractorInterface!
     var router: ___FILEBASENAMEASIDENTIFIER___Router!
 
     // MARK: - Object lifecycle
@@ -40,7 +36,7 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController, ___FILEBAS
         // NOTE: Ask the Interactor to do some work
 
         let request = ___FILEBASENAMEASIDENTIFIER___.Something.Request()
-        output.doSomething(request: request)
+        interactor.doSomething(request: request)
     }
 
     // MARK: - Display logic

@@ -16,8 +16,6 @@ extension ___FILEBASENAMEASIDENTIFIER___ViewController {
     }
 }
 
-extension ___FILEBASENAMEASIDENTIFIER___Interactor: ___FILEBASENAMEASIDENTIFIER___ViewControllerOutput {}
-
 class ___FILEBASENAMEASIDENTIFIER___Configurator {
 
     // MARK: - Object lifecycle
@@ -38,7 +36,7 @@ class ___FILEBASENAMEASIDENTIFIER___Configurator {
         let interactor = ___FILEBASENAMEASIDENTIFIER___Interactor()
         interactor.presenter = presenter
 
-        viewController.output = interactor
+        viewController.interactor = interactor
         viewController.router = router
     }
 }
