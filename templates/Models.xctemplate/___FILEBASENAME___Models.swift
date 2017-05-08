@@ -9,9 +9,9 @@
 import UIKit
 
 struct ___FILEBASENAMEASIDENTIFIER___ {
-    struct Something {
-        struct Request {}
-        struct Response {}
-        struct ViewModel {}
-    }
+  struct Something {
+    struct Request {}
+    struct Response {}
+    struct ViewModel {}
+  }
 }

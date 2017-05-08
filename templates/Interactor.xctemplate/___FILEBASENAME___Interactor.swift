@@ -9,24 +9,24 @@
 import UIKit
 
 protocol ___FILEBASENAMEASIDENTIFIER___InteractorInterface {
-    func doSomething(request: ___FILEBASENAMEASIDENTIFIER___.Something.Request)
+  func doSomething(request: ___FILEBASENAMEASIDENTIFIER___.Something.Request)
 }
 
 class ___FILEBASENAMEASIDENTIFIER___Interactor: ___FILEBASENAMEASIDENTIFIER___InteractorInterface {
-    var presenter: ___FILEBASENAMEASIDENTIFIER___PresenterInterface!
-    var worker: ___FILEBASENAMEASIDENTIFIER___Worker!
+  var presenter: ___FILEBASENAMEASIDENTIFIER___PresenterInterface!
+  var worker: ___FILEBASENAMEASIDENTIFIER___Worker!
 
-    // MARK: - Business logic
+  // MARK: - Business logic
 
-    func doSomething(request: ___FILEBASENAMEASIDENTIFIER___.Something.Request) {
-        // NOTE: Create some Worker to do the work
+  func doSomething(request: ___FILEBASENAMEASIDENTIFIER___.Something.Request) {
+    // NOTE: Create some Worker to do the work
 
-        worker = ___FILEBASENAMEASIDENTIFIER___Worker()
-        worker.doSomeWork()
+    worker = ___FILEBASENAMEASIDENTIFIER___Worker()
+    worker.doSomeWork()
 
-        // NOTE: Pass the result to the Presenter
+    // NOTE: Pass the result to the Presenter
 
-        let response = ___FILEBASENAMEASIDENTIFIER___.Something.Response()
-        presenter.presentSomething(response: response)
-    }
+    let response = ___FILEBASENAMEASIDENTIFIER___.Something.Response()
+    presenter.presentSomething(response: response)
+  }
 }

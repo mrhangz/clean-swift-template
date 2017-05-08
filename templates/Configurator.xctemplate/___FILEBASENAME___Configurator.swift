@@ -11,32 +11,32 @@ import UIKit
 // MARK: - Connect View, Interactor, and Presenter
 
 extension ___FILEBASENAMEASIDENTIFIER___ViewController {
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        router.passDataToNextScene(segue: segue)
-    }
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    router.passDataToNextScene(segue: segue)
+  }
 }
 
 class ___FILEBASENAMEASIDENTIFIER___Configurator {
 
-    // MARK: - Object lifecycle
+  // MARK: - Object lifecycle
 
-    static let sharedInstance = ___FILEBASENAMEASIDENTIFIER___Configurator()
+  static let sharedInstance = ___FILEBASENAMEASIDENTIFIER___Configurator()
 
-    private init() {}
+  private init() {}
 
-    // MARK: - Configuration
+  // MARK: - Configuration
 
-    func configure(viewController: ___FILEBASENAMEASIDENTIFIER___ViewController) {
-        let router = ___FILEBASENAMEASIDENTIFIER___Router()
-        router.viewController = viewController
+  func configure(viewController: ___FILEBASENAMEASIDENTIFIER___ViewController) {
+    let router = ___FILEBASENAMEASIDENTIFIER___Router()
+    router.viewController = viewController
 
-        let presenter = ___FILEBASENAMEASIDENTIFIER___Presenter()
-        presenter.viewController = viewController
+    let presenter = ___FILEBASENAMEASIDENTIFIER___Presenter()
+    presenter.viewController = viewController
 
-        let interactor = ___FILEBASENAMEASIDENTIFIER___Interactor()
-        interactor.presenter = presenter
+    let interactor = ___FILEBASENAMEASIDENTIFIER___Interactor()
+    interactor.presenter = presenter
 
-        viewController.interactor = interactor
-        viewController.router = router
-    }
+    viewController.interactor = interactor
+    viewController.router = router
+  }
 }
