@@ -14,6 +14,11 @@ extension ___FILEBASENAMEASIDENTIFIER___ViewController {
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     router.passDataToNextScene(segue: segue)
   }
+
+  @IBAction func unwindTo___FILEBASENAMEASIDENTIFIER___(from segue: UIStoryboardSegue) {
+    print("unwind...")
+    router.passDataToNextScene(segue: segue)
+  }
 }
 
 class ___FILEBASENAMEASIDENTIFIER___Configurator {
