@@ -18,7 +18,7 @@ class ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER___Pre
   // MARK: - Presentation logic
 
   func presentSomething(response: ___FILEBASENAMEASIDENTIFIER___.Something.Response) {
-    // NOTE: Format the response from the Interactor and pass the result back to the View Controller
+    // NOTE: Format the response from the Interactor and pass the result back to the View Controller. The resulting view model should be using only primitive types. Eg: the view should not need to involve converting date object into a formatted string. The formatting is done here.
 
     let viewModel = ___FILEBASENAMEASIDENTIFIER___.Something.ViewModel()
     viewController.displaySomething(viewModel: viewModel)

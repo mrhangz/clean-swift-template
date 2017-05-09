@@ -40,6 +40,7 @@ class ___FILEBASENAMEASIDENTIFIER___Configurator {
 
     let interactor = ___FILEBASENAMEASIDENTIFIER___Interactor()
     interactor.presenter = presenter
+    interactor.worker = ___FILEBASENAMEASIDENTIFIER___Worker(store: ___FILEBASENAMEASIDENTIFIER___Store())
 
     viewController.interactor = interactor
     viewController.router = router

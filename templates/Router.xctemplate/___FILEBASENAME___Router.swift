@@ -49,6 +49,6 @@ class ___FILEBASENAMEASIDENTIFIER___Router: ___FILEBASENAMEASIDENTIFIER___Router
     // NOTE: Teach the router how to pass data to the next scene
 
     // let someWhereViewController = segue.destinationViewController as! SomeWhereViewController
-    // someWhereViewController.output.name = viewController.output.name
+    // someWhereViewController.interactor.model = viewController.interactor.model
   }
 }

@@ -19,11 +19,10 @@ import Foundation
  */
 
 class ___FILEBASENAMEASIDENTIFIER___Store: ___FILEBASENAMEASIDENTIFIER___StoreProtocol {
-  func getData(_ onComplete: @escaping (Result<Entity>) -> Void) {
+  func getData(_ completion: @escaping (Result<Entity>) -> Void) {
     // Simulates an asynchronous background thread that calls back on the main thread after 2 seconds
     DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-      // Returns a domain model
-      onComplete(Result.success(Entity()))
+      completion(Result.success(Entity()))
     }
   }
 }
