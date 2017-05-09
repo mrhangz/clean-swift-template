@@ -1,0 +1,1 @@
+../../Store.xctemplate/___FILEBASENAME___Store.swift
