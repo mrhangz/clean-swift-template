@@ -12,7 +12,7 @@ protocol ___FILEBASENAMEASIDENTIFIER___StoreProtocol {
   func getData(_ completion: @escaping (Result<Entity>) -> Void)
 }
 
-class ___FILEBASENAMEASIDENTIFIER___Worker {
+final class ___FILEBASENAMEASIDENTIFIER___Worker {
 
   var store: ___FILEBASENAMEASIDENTIFIER___StoreProtocol
 

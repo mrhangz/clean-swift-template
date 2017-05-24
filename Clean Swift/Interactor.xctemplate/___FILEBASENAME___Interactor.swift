@@ -13,7 +13,7 @@ protocol ___FILEBASENAMEASIDENTIFIER___InteractorInterface {
   var model: Entity? { get }
 }
 
-class ___FILEBASENAMEASIDENTIFIER___Interactor: ___FILEBASENAMEASIDENTIFIER___InteractorInterface {
+final class ___FILEBASENAMEASIDENTIFIER___Interactor: ___FILEBASENAMEASIDENTIFIER___InteractorInterface {
   var presenter: ___FILEBASENAMEASIDENTIFIER___PresenterInterface!
   var worker: ___FILEBASENAMEASIDENTIFIER___Worker?
   var model: Entity?

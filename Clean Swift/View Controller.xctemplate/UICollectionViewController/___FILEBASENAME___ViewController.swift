@@ -12,7 +12,7 @@ protocol ___FILEBASENAMEASIDENTIFIER___ViewControllerInterface: class {
   func displaySomething(viewModel: ___FILEBASENAMEASIDENTIFIER___.Something.ViewModel)
 }
 
-class ___FILEBASENAMEASIDENTIFIER___ViewController: UICollectionViewController, ___FILEBASENAMEASIDENTIFIER___ViewControllerInterface {
+final class ___FILEBASENAMEASIDENTIFIER___ViewController: UICollectionViewController, ___FILEBASENAMEASIDENTIFIER___ViewControllerInterface {
   var interactor: ___FILEBASENAMEASIDENTIFIER___InteractorInterface!
   var router: ___FILEBASENAMEASIDENTIFIER___Router!
 

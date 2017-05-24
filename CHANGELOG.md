@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## 2.0.2
+
+- Added final keyword prefix to any classes that are unnecessary to be subclassed for performance improvement.
+
 ## 2.0.1
 
 - Updated unit tests for Swift 3
