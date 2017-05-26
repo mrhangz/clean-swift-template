@@ -21,7 +21,7 @@ extension ___FILEBASENAMEASIDENTIFIER___ViewController {
   }
 }
 
-class ___FILEBASENAMEASIDENTIFIER___Configurator {
+final class ___FILEBASENAMEASIDENTIFIER___Configurator {
 
   // MARK: - Object lifecycle
 

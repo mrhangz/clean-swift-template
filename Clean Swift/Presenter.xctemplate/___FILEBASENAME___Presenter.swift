@@ -12,7 +12,7 @@ protocol ___FILEBASENAMEASIDENTIFIER___PresenterInterface {
   func presentSomething(response: ___FILEBASENAMEASIDENTIFIER___.Something.Response)
 }
 
-class ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER___PresenterInterface {
+final class ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER___PresenterInterface {
   weak var viewController: ___FILEBASENAMEASIDENTIFIER___ViewControllerInterface!
 
   // MARK: - Presentation logic

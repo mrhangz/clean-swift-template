@@ -9,7 +9,7 @@
 @testable import ___PROJECTNAME___
 import XCTest
 
-class ___FILEBASENAMEASIDENTIFIER___PresenterTests: XCTestCase {
+final class ___FILEBASENAMEASIDENTIFIER___PresenterTests: XCTestCase {
 
   // MARK: - Subject under test
 
