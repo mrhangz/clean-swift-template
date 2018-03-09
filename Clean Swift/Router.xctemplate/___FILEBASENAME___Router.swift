@@ -8,12 +8,12 @@
 
 import UIKit
 
-protocol ___FILEBASENAMEASIDENTIFIER___RouterInput {
+protocol ___VARIABLE_sceneName___RouterInput {
   func navigateToSomewhere()
 }
 
-final class ___FILEBASENAMEASIDENTIFIER___Router: ___FILEBASENAMEASIDENTIFIER___RouterInput {
-  weak var viewController: ___FILEBASENAMEASIDENTIFIER___ViewController!
+class ___VARIABLE_sceneName___Router: ___VARIABLE_sceneName___RouterInput {
+  weak var viewController: ___VARIABLE_sceneName___ViewController!
 
   // MARK: - Navigation
 

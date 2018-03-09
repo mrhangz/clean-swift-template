@@ -10,37 +10,37 @@ import UIKit
 
 // MARK: - Connect View, Interactor, and Presenter
 
-extension ___FILEBASENAMEASIDENTIFIER___ViewController {
+extension ___VARIABLE_sceneName___ViewController {
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     router.passDataToNextScene(segue: segue)
   }
 
-  @IBAction func unwindTo___FILEBASENAMEASIDENTIFIER___(from segue: UIStoryboardSegue) {
+  @IBAction func unwindTo___VARIABLE_sceneName___ViewController(from segue: UIStoryboardSegue) {
     print("unwind...")
     router.passDataToNextScene(segue: segue)
   }
 }
 
-final class ___FILEBASENAMEASIDENTIFIER___Configurator {
+class ___VARIABLE_sceneName___Configurator {
 
   // MARK: - Object lifecycle
 
-  static let sharedInstance = ___FILEBASENAMEASIDENTIFIER___Configurator()
+  static let sharedInstance = ___VARIABLE_sceneName___Configurator()
 
   private init() {}
 
   // MARK: - Configuration
 
-  func configure(viewController: ___FILEBASENAMEASIDENTIFIER___ViewController) {
-    let router = ___FILEBASENAMEASIDENTIFIER___Router()
+  func configure(viewController: ___VARIABLE_sceneName___ViewController) {
+    let router = ___VARIABLE_sceneName___Router()
     router.viewController = viewController
 
-    let presenter = ___FILEBASENAMEASIDENTIFIER___Presenter()
+    let presenter = ___VARIABLE_sceneName___Presenter()
     presenter.viewController = viewController
 
-    let interactor = ___FILEBASENAMEASIDENTIFIER___Interactor()
+    let interactor = ___VARIABLE_sceneName___Interactor()
     interactor.presenter = presenter
-    interactor.worker = ___FILEBASENAMEASIDENTIFIER___Worker(store: ___FILEBASENAMEASIDENTIFIER___Store())
+    interactor.worker = ___VARIABLE_sceneName___Worker(store: ___VARIABLE_sceneName___Store())
 
     viewController.interactor = interactor
     viewController.router = router

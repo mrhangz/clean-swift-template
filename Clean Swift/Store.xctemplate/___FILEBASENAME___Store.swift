@@ -10,7 +10,7 @@ import Foundation
 
 /*
 
- The ___FILEBASENAMEASIDENTIFIER___Store class implements the ___FILEBASENAMEASIDENTIFIER___StoreProtocol.
+ The ___VARIABLE_sceneName___Store class implements the ___VARIABLE_sceneName___StoreProtocol.
 
  The source for the data could be a database, cache, or a web service.
 
@@ -18,7 +18,7 @@ import Foundation
 
  */
 
-final class ___FILEBASENAMEASIDENTIFIER___Store: ___FILEBASENAMEASIDENTIFIER___StoreProtocol {
+class ___VARIABLE_sceneName___Store: ___VARIABLE_sceneName___StoreProtocol {
   func getData(_ completion: @escaping (Result<Entity>) -> Void) {
     // Simulates an asynchronous background thread that calls back on the main thread after 2 seconds
     DispatchQueue.main.asyncAfter(deadline: .now() + 2) {

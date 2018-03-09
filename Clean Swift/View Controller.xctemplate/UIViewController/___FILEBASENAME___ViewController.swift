@@ -8,19 +8,19 @@
 
 import UIKit
 
-protocol ___FILEBASENAMEASIDENTIFIER___ViewControllerInterface: class {
-  func displaySomething(viewModel: ___FILEBASENAMEASIDENTIFIER___.Something.ViewModel)
+protocol ___VARIABLE_sceneName___ViewControllerInterface: class {
+  func displaySomething(viewModel: ___VARIABLE_sceneName___.Something.ViewModel)
 }
 
-final class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController, ___FILEBASENAMEASIDENTIFIER___ViewControllerInterface {
-  var interactor: ___FILEBASENAMEASIDENTIFIER___InteractorInterface!
-  var router: ___FILEBASENAMEASIDENTIFIER___Router!
+class ___VARIABLE_sceneName___ViewController: UIViewController, ___VARIABLE_sceneName___ViewControllerInterface {
+  var interactor: ___VARIABLE_sceneName___InteractorInterface!
+  var router: ___VARIABLE_sceneName___Router!
 
   // MARK: - Object lifecycle
 
   override func awakeFromNib() {
     super.awakeFromNib()
-    ___FILEBASENAMEASIDENTIFIER___Configurator.sharedInstance.configure(viewController: self)
+    ___VARIABLE_sceneName___Configurator.sharedInstance.configure(viewController: self)
   }
 
   // MARK: - View lifecycle
@@ -35,13 +35,13 @@ final class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController, ___F
   func doSomethingOnLoad() {
     // NOTE: Ask the Interactor to do some work
 
-    let request = ___FILEBASENAMEASIDENTIFIER___.Something.Request()
+    let request = ___VARIABLE_sceneName___.Something.Request()
     interactor.doSomething(request: request)
   }
 
   // MARK: - Display logic
 
-  func displaySomething(viewModel: ___FILEBASENAMEASIDENTIFIER___.Something.ViewModel) {
+  func displaySomething(viewModel: ___VARIABLE_sceneName___.Something.ViewModel) {
     // NOTE: Display the result from the Presenter
 
     // nameTextField.text = viewModel.name

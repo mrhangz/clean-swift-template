@@ -8,19 +8,19 @@
 
 import UIKit
 
-protocol ___FILEBASENAMEASIDENTIFIER___PresenterInterface {
-  func presentSomething(response: ___FILEBASENAMEASIDENTIFIER___.Something.Response)
+protocol ___VARIABLE_sceneName___PresenterInterface {
+  func presentSomething(response: ___VARIABLE_sceneName___.Something.Response)
 }
 
-final class ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER___PresenterInterface {
-  weak var viewController: ___FILEBASENAMEASIDENTIFIER___ViewControllerInterface!
+class ___VARIABLE_sceneName___Presenter: ___VARIABLE_sceneName___PresenterInterface {
+  weak var viewController: ___VARIABLE_sceneName___ViewControllerInterface!
 
   // MARK: - Presentation logic
 
-  func presentSomething(response: ___FILEBASENAMEASIDENTIFIER___.Something.Response) {
+  func presentSomething(response: ___VARIABLE_sceneName___.Something.Response) {
     // NOTE: Format the response from the Interactor and pass the result back to the View Controller. The resulting view model should be using only primitive types. Eg: the view should not need to involve converting date object into a formatted string. The formatting is done here.
 
-    let viewModel = ___FILEBASENAMEASIDENTIFIER___.Something.ViewModel()
+    let viewModel = ___VARIABLE_sceneName___.Something.ViewModel()
     viewController.displaySomething(viewModel: viewModel)
   }
 }

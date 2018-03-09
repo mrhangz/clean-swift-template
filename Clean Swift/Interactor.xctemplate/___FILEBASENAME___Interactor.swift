@@ -8,19 +8,19 @@
 
 import UIKit
 
-protocol ___FILEBASENAMEASIDENTIFIER___InteractorInterface {
-  func doSomething(request: ___FILEBASENAMEASIDENTIFIER___.Something.Request)
+protocol ___VARIABLE_sceneName___InteractorInterface {
+  func doSomething(request: ___VARIABLE_sceneName___.Something.Request)
   var model: Entity? { get }
 }
 
-final class ___FILEBASENAMEASIDENTIFIER___Interactor: ___FILEBASENAMEASIDENTIFIER___InteractorInterface {
-  var presenter: ___FILEBASENAMEASIDENTIFIER___PresenterInterface!
-  var worker: ___FILEBASENAMEASIDENTIFIER___Worker?
+class ___VARIABLE_sceneName___Interactor: ___VARIABLE_sceneName___InteractorInterface {
+  var presenter: ___VARIABLE_sceneName___PresenterInterface!
+  var worker: ___VARIABLE_sceneName___Worker?
   var model: Entity?
 
   // MARK: - Business logic
 
-  func doSomething(request: ___FILEBASENAMEASIDENTIFIER___.Something.Request) {
+  func doSomething(request: ___VARIABLE_sceneName___.Something.Request) {
     worker?.doSomeWork { [weak self] in
       if case let Result.success(data) = $0 {
         // If the result was successful, we keep the data so that we can deliver it to another view controller through the router.
@@ -28,7 +28,7 @@ final class ___FILEBASENAMEASIDENTIFIER___Interactor: ___FILEBASENAMEASIDENTIFIE
       }
 
       // NOTE: Pass the result to the Presenter. This is done by creating a response model with the result from the worker. The response could contain a type like UserResult enum (as declared in the SCB Easy project) with the result as an associated value.
-      let response = ___FILEBASENAMEASIDENTIFIER___.Something.Response()
+      let response = ___VARIABLE_sceneName___.Something.Response()
       self?.presenter.presentSomething(response: response)
     }
   }
