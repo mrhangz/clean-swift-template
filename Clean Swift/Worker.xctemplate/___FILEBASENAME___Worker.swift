@@ -8,15 +8,15 @@
 
 import UIKit
 
-protocol ___FILEBASENAMEASIDENTIFIER___StoreProtocol {
+protocol ___VARIABLE_sceneName___StoreProtocol {
   func getData(_ completion: @escaping (Result<Entity>) -> Void)
 }
 
-final class ___FILEBASENAMEASIDENTIFIER___Worker {
+class ___VARIABLE_sceneName___Worker {
 
-  var store: ___FILEBASENAMEASIDENTIFIER___StoreProtocol
+  var store: ___VARIABLE_sceneName___StoreProtocol
 
-  init(store: ___FILEBASENAMEASIDENTIFIER___StoreProtocol) {
+  init(store: ___VARIABLE_sceneName___StoreProtocol) {
     self.store = store
   }
 

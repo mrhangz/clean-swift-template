@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct ___FILEBASENAMEASIDENTIFIER___ {
+struct ___VARIABLE_sceneName___ {
   /// This structure represents a use case
   struct Something {
     /// Data struct sent to Interactor

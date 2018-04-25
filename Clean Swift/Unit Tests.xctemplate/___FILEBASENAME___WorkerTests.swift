@@ -9,17 +9,17 @@
 @testable import ___PROJECTNAME___
 import XCTest
 
-final class ___FILEBASENAMEASIDENTIFIER___WorkerTests: XCTestCase {
+class ___VARIABLE_sceneName___WorkerTests: XCTestCase {
 
   // MARK: - Subject under test
 
-  var sut: ___FILEBASENAMEASIDENTIFIER___Worker!
+  var sut: ___VARIABLE_sceneName___Worker!
 
   // MARK: - Test lifecycle
 
   override func setUp() {
     super.setUp()
-    setup___FILEBASENAMEASIDENTIFIER___Worker()
+    setup___VARIABLE_sceneName___Worker()
   }
 
   override func tearDown() {
@@ -28,8 +28,8 @@ final class ___FILEBASENAMEASIDENTIFIER___WorkerTests: XCTestCase {
 
   // MARK: - Test setup
 
-  func setup___FILEBASENAMEASIDENTIFIER___Worker() {
-    sut = ___FILEBASENAMEASIDENTIFIER___Worker()
+  func setup___VARIABLE_sceneName___Worker() {
+    sut = ___VARIABLE_sceneName___Worker()
   }
 
   // MARK: - Test doubles

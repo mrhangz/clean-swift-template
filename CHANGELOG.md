@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## 2.0.3
+
+- Removed final keyword prefix from any classes to be able to instantiate unit testing
+- Compatible with Xcode 9.2
+
 ## 2.0.2
 
 - Added final keyword prefix to any classes that are unnecessary to be subclassed for performance improvement.
