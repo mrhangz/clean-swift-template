@@ -20,7 +20,24 @@ class ___VARIABLE_sceneName___ViewController: UIViewController, ___VARIABLE_scen
 
   override func awakeFromNib() {
     super.awakeFromNib()
-    ___VARIABLE_sceneName___Configurator.sharedInstance.configure(viewController: self)
+    configure(viewController: self)
+  }
+
+  // MARK: - Configuration
+
+  func configure(viewController: ___VARIABLE_sceneName___ViewController) {
+    let router = ___VARIABLE_sceneName___Router()
+    router.viewController = viewController
+
+    let presenter = ___VARIABLE_sceneName___Presenter()
+    presenter.viewController = viewController
+
+    let interactor = ___VARIABLE_sceneName___Interactor()
+    interactor.presenter = presenter
+    interactor.worker = ___VARIABLE_sceneName___Worker(store: ___VARIABLE_sceneName___Store())
+
+    viewController.interactor = interactor
+    viewController.router = router
   }
 
   // MARK: - View lifecycle
@@ -45,5 +62,16 @@ class ___VARIABLE_sceneName___ViewController: UIViewController, ___VARIABLE_scen
     // NOTE: Display the result from the Presenter
 
     // nameTextField.text = viewModel.name
+  }
+
+  // MARK: - Router
+
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    router.passDataToNextScene(segue: segue)
+  }
+
+  @IBAction func unwindTo___VARIABLE_sceneName___ViewController(from segue: UIStoryboardSegue) {
+    print("unwind...")
+    router.passDataToNextScene(segue: segue)
   }
 }
