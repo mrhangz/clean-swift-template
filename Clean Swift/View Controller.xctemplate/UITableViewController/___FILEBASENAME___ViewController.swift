@@ -25,7 +25,7 @@ class ___VARIABLE_sceneName___ViewController: UITableViewController, ___VARIABLE
 
   // MARK: - Configuration
 
-  func configure(viewController: ___VARIABLE_sceneName___ViewController) {
+  private func configure(viewController: ___VARIABLE_sceneName___ViewController) {
     let router = ___VARIABLE_sceneName___Router()
     router.viewController = viewController
 
